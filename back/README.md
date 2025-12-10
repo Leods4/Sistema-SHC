@@ -11,14 +11,19 @@ Formato de Resposta:     JSON (application/json)
 ### 2. CONFIGURAÇÃO INICIAL
 
 1. Clone o repositório:
+
    git clone <repo_url>
+   
    cd shc-backend
+
    composer install (necessita composer, tambem pode ser feito o download da pasta vendor manualmente)
 
 2. Configure o arquivo .env:
+
    Copie .env.example → .env e ajuste banco de dados. (arquivo .env incluso vem configurado com o nosso postgre)
 
 3. Execute as migrations:
+
 php artisan migrate:fresh 
 
 php artisan db:seed 
@@ -28,7 +33,9 @@ php artisan storage:link
 → Será criado usuários como especificado no seeder
 
 Exemplo login admin:
+
 CPF: 000.000.000-00
+   
 Senha: admin123
 
 ---
